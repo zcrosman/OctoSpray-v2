@@ -5,10 +5,10 @@ OctoSpray is a python brute forcing tool created specificly for hosts with Octop
 usage: OctoSpray.py [-h] [-v] (-l USER | -L USRLIST) (-P PWDLIST | -p PASSWORD) (-u URL | -U URLLIST) [-s]
 
 optional arguments: 
-  -h, --help            show this help message and exit 
-  -v, --verbose         will print loaded passwords 
-  -l USER, --user USER  provide a single username 
-  -L USRLIST, --usrlist USRLIST 
+  -h, --help            show this help message and exit  
+  -v, --verbose         will print loaded passwords  
+  -l USER, --user USER  provide a single username  
+  -L USRLIST, --usrlist USRLIST  
                         provide list of usernames 
   -P PWDLIST, --pwdlist PWDLIST 
                         provide the list of passwords 
