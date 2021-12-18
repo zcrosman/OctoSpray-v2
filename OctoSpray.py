@@ -23,6 +23,8 @@ import time
 import argparse
 import json
 
+import banner
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-v','--verbose', help="will print loaded passwords", action='store_true')
@@ -121,7 +123,7 @@ class Bruter:
 				self.found = True
 				print(f'\n{colors.CRIT}{colors.WARNING}Valid user found{colors.ENDC}')
 				print(f'Username is {colors.FAIL}{self.username}{colors.ENDC}')
-				print(f'Password is {colors.FAIL}{passwd}{colors.ENDC}')
+				print(f'Password is {colors.FAIL}{passwd}{colors.ENDC}\n')
 				found[self.url] = (self.username, passwd)
 
 
@@ -150,6 +152,8 @@ def show_found():
 	#print(f'\n{colors.ACTION}{colors.HEADER}Attempted {attempted} passwords on {len(sites)} sites{colors.ENDC}')
 
 if __name__ == '__main__':
+
+	banner.print_banner()
 	print(f'\n\n{colors.ACTION}{colors.HEADER}Loaded settings{colors.ENDC}')
 	print(colors.LINE)
 	if args.urllist is not None:
