@@ -16,5 +16,5 @@ optional arguments:
   
 ***Example***
   
-![alt text](https://github.com/zcrosman/OctoSpray-v2/Images/Example%20usage.png)
+![alt text](https://github.com/zcrosman/OctoSpray-v2/blob/main/Images/Example%20usage.png?raw=true)
 
