@@ -57,7 +57,6 @@ newFound = 0
 
 found = {}
 
-
 class colors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
