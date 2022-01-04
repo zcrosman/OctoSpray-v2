@@ -15,6 +15,7 @@ parser = argparse.ArgumentParser(epilog=textwrap.dedent(
     '''Example: python3 lnkbomb.py -l admin -P rockyou.txt -u http://192.168.1.55 -v
         Example: python3 lnkbomb.py -L users.txt -p Password123 -U urls.txt -v
 '''))
+
 parser.add_argument('-v', '--verbose', help="will print loaded passwords", action='store_true')
 
 usrgroup = parser.add_mutually_exclusive_group(required=True)
