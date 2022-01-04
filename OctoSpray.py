@@ -1,5 +1,4 @@
 #! /usr/bin/python3
-#test
 
 from queue import Queue
 
@@ -60,12 +59,6 @@ class colors:
     INFO = BOLD + OKGREEN + '[^] ' + ENDC
     MAIN = BOLD + OKBLUE + '[*] ' + ENDC
     CRIT = BOLD + FAIL + '[!] ' + ENDC
-
-
-class Host:
-    def __init__(self, url):
-        self.url = url
-        self.found = False
 
 
 class Bruter:
@@ -131,13 +124,10 @@ def load_pwds():
     except OSError:
         return
 
-
 def write_pwds():
-	if found:
-		json_object = json.dumps(found, indent=4)
-		with open(saved, "w") as outfile:
-			json.dump(found, outfile)
-
+    if found:
+        with open(saved, "w") as outfile:
+            json.dump(found, outfile)
 
 def show_found():
     if found:
