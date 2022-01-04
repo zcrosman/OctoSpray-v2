@@ -1,19 +1,5 @@
-#! /usr//bin/python3
+#! /usr/bin/python3
 
-# future additions
-# - clean up format/colors
-# - clean up functions
-# - only print valid creds if they are new (found in current session)
-# - create arg to just print valid passwords
-# - import IPs from shodan
-# - check if valid creds are already found before starting on hosts
-# - save more detailed info in json file (time found, access level, etc)
-# - add option to change settings of printer
-# - add option to print object
-
-
-# from io import BytesIO
-# from lxml import etree
 from queue import Queue
 
 import requests
@@ -56,6 +42,7 @@ wordlist = args.pwdlist
 newFound = 0
 
 found = {}
+
 
 class colors:
     HEADER = '\033[95m'
