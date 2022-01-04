@@ -12,8 +12,8 @@ import textwrap
 import banner
 
 parser = argparse.ArgumentParser(epilog=textwrap.dedent(
-    '''Example: python3 lnkbomb.py -l admin -P rockyou.txt -u http://192.168.1.55 -v
-        Example: python3 lnkbomb.py -L users.txt -p Password123 -U urls.txt -v
+    '''Example: python3 Octoprint.py -l admin -P rockyou.txt -u http://192.168.1.55 -v
+        Example: python3 Octoprint.py -L users.txt -p Password123 -U urls.txt -v
 '''))
 
 parser.add_argument('-v', '--verbose', help="will print loaded passwords", action='store_true')
