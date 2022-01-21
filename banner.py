@@ -28,8 +28,8 @@ banner3 = """
 """
 
 banners = [banner, banner2, banner3]
-title = 'Octoprint v0.1'
+title = '\nOctoprint v0.1'
 
 def print_banner():
     print(random.choice(banners) + '\n')
-	# print(title)
+    print(title)

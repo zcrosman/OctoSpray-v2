@@ -34,7 +34,6 @@ urlgroup.add_argument('-U', '--urllist', help="provide a list of urls")
 parser.add_argument('-s', '--shodan', help="find online octiprint hosts", action='store_true')
 
 args = parser.parse_args()
-# print(args)
 
 shodan_api = 'api_key_here'
 login = '/api/login'
@@ -55,7 +54,7 @@ class colors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-    LINE = '----------------------------------------'
+    LINE = '-' * 40
     ACTION = BOLD + OKCYAN + '[+] ' + ENDC
     INFO = BOLD + OKGREEN + '[^] ' + ENDC
     MAIN = BOLD + OKBLUE + '[*] ' + ENDC
